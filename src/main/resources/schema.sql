@@ -1,0 +1,5 @@
+CREATE TABLE MyUser (
+    ID int(11) NOT NULL AUTO_INCREMENT,
+    NAME varchar(30),
+    PRIMARY KEY (ID)
+);

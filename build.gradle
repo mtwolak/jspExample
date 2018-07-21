@@ -27,6 +27,12 @@ repositories {
 dependencies {
 	compile group: 'org.mariadb.jdbc', name: 'mariadb-java-client'
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
-	compile('org.springframework.boot:spring-boot-starter-web')
-	testCompile('org.springframework.boot:spring-boot-starter-test')
+    compile('org.springframework.boot:spring-boot-starter-web')
+
+    //for executable jar with jsp
+    compile("javax.servlet:jstl")
+    compile("org.apache.tomcat.embed:tomcat-embed-jasper")
+
+//    compileOnly('org.projectlombok:lombok')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
 }
