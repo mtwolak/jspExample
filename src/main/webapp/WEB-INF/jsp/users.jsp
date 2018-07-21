@@ -8,9 +8,13 @@
 <table border="1">
 <tr><th>Id</th><th>Name</th></tr>
 <c:forEach items="${users}" var="user">
+    <c:url var="updateLink" value="update">
+        <c:param name="userId" value="${user.id}" />
+    </c:url>
 <tr>
 <td>${user.id}</td>
 <td>${user.name}</td>
+<td><a href="${updateLink}">Update</a></td>
 </tr>
 </c:forEach>
 </table>
