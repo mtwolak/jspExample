@@ -36,4 +36,10 @@ public class UserController {
         return "create-new";
     }
 
+    @GetMapping("delete")
+    public String deleteUser(@RequestParam("userId") Integer id) {
+        userRepository.deleteById(id);
+        return "redirect:/user/getAllUsers";
+    }
+
 }
