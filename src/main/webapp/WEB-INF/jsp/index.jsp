@@ -6,5 +6,8 @@
 <html>
 	<body>
 		<h1>Hello World - ${german}</h1>
+		<a href="${pageContext.request.contextPath}/user/showAddingNew">Add user</a>
+		<br />
+		<a href="${pageContext.request.contextPath}/user/getAllUsers">Show users</a>
 	</body>
 </html>

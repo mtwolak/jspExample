@@ -4,6 +4,7 @@
 <head></head>
 <body>
 <h2>Users</h2>
+<input type="button" value="Add new" onclick="window.location.href='showAddingNew'; return false" />
 <table border="1">
 <tr><th>Id</th><th>Name</th></tr>
 <c:forEach items="${users}" var="user">
